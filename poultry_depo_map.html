@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0ede00f736614d7f55f4c19f0d6ef990 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0ede00f736614d7f55f4c19f0d6ef990" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0ede00f736614d7f55f4c19f0d6ef990 = L.map(
+                "map_0ede00f736614d7f55f4c19f0d6ef990",
+                {
+                    center: [10.415, -61.385],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5363e349f8f8a6d9f7e0edbba658212d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5363e349f8f8a6d9f7e0edbba658212d.addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var marker_5fddbc53a60fbf53f6f2f791b822fe80 = L.marker(
+                [10.4087052, -61.4714117],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_508c7d2e49771c63f50d6be8b9480651 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5fddbc53a60fbf53f6f2f791b822fe80.setIcon(icon_508c7d2e49771c63f50d6be8b9480651);
+        
+    
+        var popup_a92eccc2842c35ef78105acc4ecbd933 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbf84e868d9de7694fead888cd6c718b = $(`<div id="html_cbf84e868d9de7694fead888cd6c718b" style="width: 100.0%; height: 100.0%;">Maddy's Pluck Shop</div>`)[0];
+                popup_a92eccc2842c35ef78105acc4ecbd933.setContent(html_cbf84e868d9de7694fead888cd6c718b);
+            
+        
+
+        marker_5fddbc53a60fbf53f6f2f791b822fe80.bindPopup(popup_a92eccc2842c35ef78105acc4ecbd933)
+        ;
+
+        
+    
+    
+            var marker_d446689507fa74221c1af91fa6c361e3 = L.marker(
+                [10.4083013, -61.4714469],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_655a3acea117c6d2474c8dbbaafa2f0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d446689507fa74221c1af91fa6c361e3.setIcon(icon_655a3acea117c6d2474c8dbbaafa2f0b);
+        
+    
+        var popup_84ff1fa1f7dd75fcc030ac1ef4d61d14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4094816497a2f3cadb0e2903d655f20a = $(`<div id="html_4094816497a2f3cadb0e2903d655f20a" style="width: 100.0%; height: 100.0%;">R.K Poultry</div>`)[0];
+                popup_84ff1fa1f7dd75fcc030ac1ef4d61d14.setContent(html_4094816497a2f3cadb0e2903d655f20a);
+            
+        
+
+        marker_d446689507fa74221c1af91fa6c361e3.bindPopup(popup_84ff1fa1f7dd75fcc030ac1ef4d61d14)
+        ;
+
+        
+    
+    
+            var marker_26d5392ee4be427dcf63a6d1f886a7f9 = L.marker(
+                [10.4097469, -61.4715773],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_b044644828b12b71181c93ded15f193c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_26d5392ee4be427dcf63a6d1f886a7f9.setIcon(icon_b044644828b12b71181c93ded15f193c);
+        
+    
+        var popup_b43f41ce0323d9053ada7eaf03d65701 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ea989e089f63ef958f15a54021fecc5 = $(`<div id="html_2ea989e089f63ef958f15a54021fecc5" style="width: 100.0%; height: 100.0%;">Imtiaz's poultry depot</div>`)[0];
+                popup_b43f41ce0323d9053ada7eaf03d65701.setContent(html_2ea989e089f63ef958f15a54021fecc5);
+            
+        
+
+        marker_26d5392ee4be427dcf63a6d1f886a7f9.bindPopup(popup_b43f41ce0323d9053ada7eaf03d65701)
+        ;
+
+        
+    
+    
+            var marker_c2f2ff37a5412fa5647471a3423d16a2 = L.marker(
+                [10.4036167, -61.4660681],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_3b05c0e921cb94fbad48e5c4522c398f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c2f2ff37a5412fa5647471a3423d16a2.setIcon(icon_3b05c0e921cb94fbad48e5c4522c398f);
+        
+    
+        var popup_9c5596ccd83d7a16a6c1c9a39716ebb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_854017024ef2e2e74697ac3a9659026f = $(`<div id="html_854017024ef2e2e74697ac3a9659026f" style="width: 100.0%; height: 100.0%;">Nadia Depot</div>`)[0];
+                popup_9c5596ccd83d7a16a6c1c9a39716ebb3.setContent(html_854017024ef2e2e74697ac3a9659026f);
+            
+        
+
+        marker_c2f2ff37a5412fa5647471a3423d16a2.bindPopup(popup_9c5596ccd83d7a16a6c1c9a39716ebb3)
+        ;
+
+        
+    
+    
+            var marker_7f440ab1031a1a63e395009583471d55 = L.marker(
+                [10.4025258, -61.4649325],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_2df2502da79f3bbb4045c65567b5db93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7f440ab1031a1a63e395009583471d55.setIcon(icon_2df2502da79f3bbb4045c65567b5db93);
+        
+    
+        var popup_808b2d2d848188f4708d8a510b67583e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45468b8f723b8f760529f7bbc833db3c = $(`<div id="html_45468b8f723b8f760529f7bbc833db3c" style="width: 100.0%; height: 100.0%;">Faizal and Son's Chicken Depot</div>`)[0];
+                popup_808b2d2d848188f4708d8a510b67583e.setContent(html_45468b8f723b8f760529f7bbc833db3c);
+            
+        
+
+        marker_7f440ab1031a1a63e395009583471d55.bindPopup(popup_808b2d2d848188f4708d8a510b67583e)
+        ;
+
+        
+    
+    
+            var marker_3846c791903797f6d69eb689d98cdc9b = L.marker(
+                [10.4012031, -61.4650244],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_d5b01e5429db0de490e7a09e20e3470a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3846c791903797f6d69eb689d98cdc9b.setIcon(icon_d5b01e5429db0de490e7a09e20e3470a);
+        
+    
+        var popup_5eca0532420ba97c62e964782c23183d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dafb1652c7341f49ed7086009e540241 = $(`<div id="html_dafb1652c7341f49ed7086009e540241" style="width: 100.0%; height: 100.0%;">Salina's Poultry Depot</div>`)[0];
+                popup_5eca0532420ba97c62e964782c23183d.setContent(html_dafb1652c7341f49ed7086009e540241);
+            
+        
+
+        marker_3846c791903797f6d69eb689d98cdc9b.bindPopup(popup_5eca0532420ba97c62e964782c23183d)
+        ;
+
+        
+    
+    
+            var marker_ab3b324e3ef928baa1d00763263bd8aa = L.marker(
+                [10.395164, -61.472958],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_9c670b7932b7b11baa903254988552da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ab3b324e3ef928baa1d00763263bd8aa.setIcon(icon_9c670b7932b7b11baa903254988552da);
+        
+    
+        var popup_823b3dc59faf89a73df5c45d1c56e099 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_571a3b02416e64fb4bf37d14404c5f36 = $(`<div id="html_571a3b02416e64fb4bf37d14404c5f36" style="width: 100.0%; height: 100.0%;">Rajabs Poultry Depot</div>`)[0];
+                popup_823b3dc59faf89a73df5c45d1c56e099.setContent(html_571a3b02416e64fb4bf37d14404c5f36);
+            
+        
+
+        marker_ab3b324e3ef928baa1d00763263bd8aa.bindPopup(popup_823b3dc59faf89a73df5c45d1c56e099)
+        ;
+
+        
+    
+    
+            var marker_062ad4af663bad2f0e66e0a1670b9e7d = L.marker(
+                [10.422533, -61.4722435],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_8a8784314e378aa53815127624b065d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_062ad4af663bad2f0e66e0a1670b9e7d.setIcon(icon_8a8784314e378aa53815127624b065d6);
+        
+    
+        var popup_b774ede3412644f1ae8f80536abedf7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46a6526191d4bb7e2ac7aeaabb0a9c1c = $(`<div id="html_46a6526191d4bb7e2ac7aeaabb0a9c1c" style="width: 100.0%; height: 100.0%;">Mohammed's Pluck Shop</div>`)[0];
+                popup_b774ede3412644f1ae8f80536abedf7a.setContent(html_46a6526191d4bb7e2ac7aeaabb0a9c1c);
+            
+        
+
+        marker_062ad4af663bad2f0e66e0a1670b9e7d.bindPopup(popup_b774ede3412644f1ae8f80536abedf7a)
+        ;
+
+        
+    
+    
+            var marker_a07182dedf94e5db2dfe79f8fcb1bc87 = L.marker(
+                [10.4230527, -61.4799773],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_fb3960a330f430eb5a0d048c97e51918 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a07182dedf94e5db2dfe79f8fcb1bc87.setIcon(icon_fb3960a330f430eb5a0d048c97e51918);
+        
+    
+        var popup_c9df5fc5d8704b9d70a791a302f17dbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79eb90e59b32c9875c70bd7c59494bda = $(`<div id="html_79eb90e59b32c9875c70bd7c59494bda" style="width: 100.0%; height: 100.0%;">Small'z OneStop Shop</div>`)[0];
+                popup_c9df5fc5d8704b9d70a791a302f17dbc.setContent(html_79eb90e59b32c9875c70bd7c59494bda);
+            
+        
+
+        marker_a07182dedf94e5db2dfe79f8fcb1bc87.bindPopup(popup_c9df5fc5d8704b9d70a791a302f17dbc)
+        ;
+
+        
+    
+    
+            var marker_ee44cbc82d20c40be00161f009b443da = L.marker(
+                [10.4234157, -61.4770051],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_45a8336638fc40596c3fa9083e0b0af5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ee44cbc82d20c40be00161f009b443da.setIcon(icon_45a8336638fc40596c3fa9083e0b0af5);
+        
+    
+        var popup_9e46d49e7cdbd4aa35ed37bb5c5e2d19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5dcd596a4315f144b282d7062db58e4b = $(`<div id="html_5dcd596a4315f144b282d7062db58e4b" style="width: 100.0%; height: 100.0%;">Souraj Chicken Depot</div>`)[0];
+                popup_9e46d49e7cdbd4aa35ed37bb5c5e2d19.setContent(html_5dcd596a4315f144b282d7062db58e4b);
+            
+        
+
+        marker_ee44cbc82d20c40be00161f009b443da.bindPopup(popup_9e46d49e7cdbd4aa35ed37bb5c5e2d19)
+        ;
+
+        
+    
+    
+            var marker_8de2d226ab80df4e1702c365ba29a04d = L.marker(
+                [10.4221749, -61.4664556],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_e6953e712ae1c74197aeda51086aa92e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8de2d226ab80df4e1702c365ba29a04d.setIcon(icon_e6953e712ae1c74197aeda51086aa92e);
+        
+    
+        var popup_a1c9db0116ab6dacfa24543ac787d683 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c731c81641ddb40e6f3bc4d58275fa0 = $(`<div id="html_2c731c81641ddb40e6f3bc4d58275fa0" style="width: 100.0%; height: 100.0%;">Couva Meat Depot </div>`)[0];
+                popup_a1c9db0116ab6dacfa24543ac787d683.setContent(html_2c731c81641ddb40e6f3bc4d58275fa0);
+            
+        
+
+        marker_8de2d226ab80df4e1702c365ba29a04d.bindPopup(popup_a1c9db0116ab6dacfa24543ac787d683)
+        ;
+
+        
+    
+    
+            var marker_a81d19a752b5b9f7111baaf4caef3d05 = L.marker(
+                [10.4310311, -61.4591553],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_c87a2e66e54d622bc59aa0f3092e0318 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a81d19a752b5b9f7111baaf4caef3d05.setIcon(icon_c87a2e66e54d622bc59aa0f3092e0318);
+        
+    
+        var popup_109c296f99d58ef5c3ad1a4fb540a905 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6aca686b5cc6e9d6a84311cd2345af09 = $(`<div id="html_6aca686b5cc6e9d6a84311cd2345af09" style="width: 100.0%; height: 100.0%;">Dino's Enterprises</div>`)[0];
+                popup_109c296f99d58ef5c3ad1a4fb540a905.setContent(html_6aca686b5cc6e9d6a84311cd2345af09);
+            
+        
+
+        marker_a81d19a752b5b9f7111baaf4caef3d05.bindPopup(popup_109c296f99d58ef5c3ad1a4fb540a905)
+        ;
+
+        
+    
+    
+            var marker_2492aa24917ccc48f5dec67b38fb0a4b = L.marker(
+                [10.436438, -61.4530708],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_eafc0a582fe8ab751bfae1978d22023c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2492aa24917ccc48f5dec67b38fb0a4b.setIcon(icon_eafc0a582fe8ab751bfae1978d22023c);
+        
+    
+        var popup_b701043ae2874b31ea6f85962daeb8ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85c54ae4eff49858c38f80c1a1c27c31 = $(`<div id="html_85c54ae4eff49858c38f80c1a1c27c31" style="width: 100.0%; height: 100.0%;">Perlou's Poultry</div>`)[0];
+                popup_b701043ae2874b31ea6f85962daeb8ab.setContent(html_85c54ae4eff49858c38f80c1a1c27c31);
+            
+        
+
+        marker_2492aa24917ccc48f5dec67b38fb0a4b.bindPopup(popup_b701043ae2874b31ea6f85962daeb8ab)
+        ;
+
+        
+    
+    
+            var marker_e5cadfd9e67029a9a3f145ea5be337c3 = L.marker(
+                [10.4435917, -61.449597],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_7347bf69efb7be541148ef28f689822a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e5cadfd9e67029a9a3f145ea5be337c3.setIcon(icon_7347bf69efb7be541148ef28f689822a);
+        
+    
+        var popup_6aeb87098d85a85fc5aa12ef8fa440fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49ec622bec9bc8b0867a6b02cc34524c = $(`<div id="html_49ec622bec9bc8b0867a6b02cc34524c" style="width: 100.0%; height: 100.0%;">Vishal's Poultry Depo</div>`)[0];
+                popup_6aeb87098d85a85fc5aa12ef8fa440fb.setContent(html_49ec622bec9bc8b0867a6b02cc34524c);
+            
+        
+
+        marker_e5cadfd9e67029a9a3f145ea5be337c3.bindPopup(popup_6aeb87098d85a85fc5aa12ef8fa440fb)
+        ;
+
+        
+    
+    
+            var marker_7bf171b0ec8960c1f08ae7ac9759b52e = L.marker(
+                [10.4445252, -61.448852],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_8a5dd170ee77f283a7adb3f6c29338bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7bf171b0ec8960c1f08ae7ac9759b52e.setIcon(icon_8a5dd170ee77f283a7adb3f6c29338bd);
+        
+    
+        var popup_25248c446813778a6cf7312c35aa124e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30f5fdef5cfc6a291a8fab555c4dfcf0 = $(`<div id="html_30f5fdef5cfc6a291a8fab555c4dfcf0" style="width: 100.0%; height: 100.0%;">High Quality Poultry</div>`)[0];
+                popup_25248c446813778a6cf7312c35aa124e.setContent(html_30f5fdef5cfc6a291a8fab555c4dfcf0);
+            
+        
+
+        marker_7bf171b0ec8960c1f08ae7ac9759b52e.bindPopup(popup_25248c446813778a6cf7312c35aa124e)
+        ;
+
+        
+    
+    
+            var marker_9dc82d8ef61caea943f1e497b8f62b56 = L.marker(
+                [10.4469856, -61.4447717],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_96a3e7e01222e7902a1deba7bb4704e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9dc82d8ef61caea943f1e497b8f62b56.setIcon(icon_96a3e7e01222e7902a1deba7bb4704e6);
+        
+    
+        var popup_5b5a4e7a5fccda106f008c85c669291c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_778607a759cd30d9c1833cfd3077db73 = $(`<div id="html_778607a759cd30d9c1833cfd3077db73" style="width: 100.0%; height: 100.0%;">Lachan Depo</div>`)[0];
+                popup_5b5a4e7a5fccda106f008c85c669291c.setContent(html_778607a759cd30d9c1833cfd3077db73);
+            
+        
+
+        marker_9dc82d8ef61caea943f1e497b8f62b56.bindPopup(popup_5b5a4e7a5fccda106f008c85c669291c)
+        ;
+
+        
+    
+    
+            var marker_5d4439de620fcb27df3c22cc5b9a0852 = L.marker(
+                [10.4199379, -61.4052359],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_4126e069dfd657ab644735dccae561b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5d4439de620fcb27df3c22cc5b9a0852.setIcon(icon_4126e069dfd657ab644735dccae561b7);
+        
+    
+        var popup_afa9383cf3e1035f5d8c55e55d83dabd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8c8256c9b9045298636eed85a85b3f7 = $(`<div id="html_c8c8256c9b9045298636eed85a85b3f7" style="width: 100.0%; height: 100.0%;">Rani's Puja Bhavan</div>`)[0];
+                popup_afa9383cf3e1035f5d8c55e55d83dabd.setContent(html_c8c8256c9b9045298636eed85a85b3f7);
+            
+        
+
+        marker_5d4439de620fcb27df3c22cc5b9a0852.bindPopup(popup_afa9383cf3e1035f5d8c55e55d83dabd)
+        ;
+
+        
+    
+    
+            var marker_4f34ee3e81b5925c4890f304162b1245 = L.marker(
+                [10.4178849, -61.4086571],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_bbca1fffbb1e51fdf12c46421a0c66f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4f34ee3e81b5925c4890f304162b1245.setIcon(icon_bbca1fffbb1e51fdf12c46421a0c66f8);
+        
+    
+        var popup_207ce2c59c63b81aa3b736be398eff14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bafd58bacbfd11eec69757a76cc4a99 = $(`<div id="html_8bafd58bacbfd11eec69757a76cc4a99" style="width: 100.0%; height: 100.0%;">A&S Poultry</div>`)[0];
+                popup_207ce2c59c63b81aa3b736be398eff14.setContent(html_8bafd58bacbfd11eec69757a76cc4a99);
+            
+        
+
+        marker_4f34ee3e81b5925c4890f304162b1245.bindPopup(popup_207ce2c59c63b81aa3b736be398eff14)
+        ;
+
+        
+    
+    
+            var marker_9c4e275007b443788135f5f9df19a819 = L.marker(
+                [10.4174305, -61.4098654],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_a9242be2beeff1a57bd518a0eb79c6e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9c4e275007b443788135f5f9df19a819.setIcon(icon_a9242be2beeff1a57bd518a0eb79c6e1);
+        
+    
+        var popup_e2f5b09e408c61bd7f38261faa35ead1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ceedd64c5b9f88274f7de2c22c30839 = $(`<div id="html_0ceedd64c5b9f88274f7de2c22c30839" style="width: 100.0%; height: 100.0%;">Suvhan's Poultry</div>`)[0];
+                popup_e2f5b09e408c61bd7f38261faa35ead1.setContent(html_0ceedd64c5b9f88274f7de2c22c30839);
+            
+        
+
+        marker_9c4e275007b443788135f5f9df19a819.bindPopup(popup_e2f5b09e408c61bd7f38261faa35ead1)
+        ;
+
+        
+    
+    
+            var marker_e1ebbe07141755d3666ae5746b3a9ba1 = L.marker(
+                [10.4044183, -61.3822142],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_aef94c703e1309983d8ed00d32645771 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e1ebbe07141755d3666ae5746b3a9ba1.setIcon(icon_aef94c703e1309983d8ed00d32645771);
+        
+    
+        var popup_0ee5347bb374c792bded59d44d815e81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7cb3ca9f304cf8cd0b0648924480951 = $(`<div id="html_e7cb3ca9f304cf8cd0b0648924480951" style="width: 100.0%; height: 100.0%;">Aruna's Poultry Depo</div>`)[0];
+                popup_0ee5347bb374c792bded59d44d815e81.setContent(html_e7cb3ca9f304cf8cd0b0648924480951);
+            
+        
+
+        marker_e1ebbe07141755d3666ae5746b3a9ba1.bindPopup(popup_0ee5347bb374c792bded59d44d815e81)
+        ;
+
+        
+    
+    
+            var marker_471aa6f6310aefd7daa18147efc9a5b0 = L.marker(
+                [10.3249488, -61.2323296],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_5fc4a1b87f375a868c9f2fcf8b0e6838 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_471aa6f6310aefd7daa18147efc9a5b0.setIcon(icon_5fc4a1b87f375a868c9f2fcf8b0e6838);
+        
+    
+        var popup_53511b4e32c73d939b8cc15b6a0de741 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86cd830960cab4adea1e79b3db49e70b = $(`<div id="html_86cd830960cab4adea1e79b3db49e70b" style="width: 100.0%; height: 100.0%;">D Rampersad minimart & poultry depot</div>`)[0];
+                popup_53511b4e32c73d939b8cc15b6a0de741.setContent(html_86cd830960cab4adea1e79b3db49e70b);
+            
+        
+
+        marker_471aa6f6310aefd7daa18147efc9a5b0.bindPopup(popup_53511b4e32c73d939b8cc15b6a0de741)
+        ;
+
+        
+    
+    
+            var marker_54909f820a741965537dae9bac3c30f8 = L.marker(
+                [10.3227606, -61.2320939],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_d50edc6ec0088009a5ed3a20632a4203 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_54909f820a741965537dae9bac3c30f8.setIcon(icon_d50edc6ec0088009a5ed3a20632a4203);
+        
+    
+        var popup_e330c5ff3a834492739452b4cc72dd6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e8f5c0a3669ec7cfa27699e5efb6f66 = $(`<div id="html_7e8f5c0a3669ec7cfa27699e5efb6f66" style="width: 100.0%; height: 100.0%;">Patricia Sookoo Depot</div>`)[0];
+                popup_e330c5ff3a834492739452b4cc72dd6f.setContent(html_7e8f5c0a3669ec7cfa27699e5efb6f66);
+            
+        
+
+        marker_54909f820a741965537dae9bac3c30f8.bindPopup(popup_e330c5ff3a834492739452b4cc72dd6f)
+        ;
+
+        
+    
+    
+            var marker_466f381fe78db28753a571c6cb2e3fb9 = L.marker(
+                [10.3200805, -61.2351285],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_9a3eb3ea614a1bb4d97fc39b9845f780 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_466f381fe78db28753a571c6cb2e3fb9.setIcon(icon_9a3eb3ea614a1bb4d97fc39b9845f780);
+        
+    
+        var popup_13d5676dc9ea5b651d1a48bae747f772 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3114d9476501b42bf5a3e2d8206edc85 = $(`<div id="html_3114d9476501b42bf5a3e2d8206edc85" style="width: 100.0%; height: 100.0%;">Azin Mohammed Chicken Depot</div>`)[0];
+                popup_13d5676dc9ea5b651d1a48bae747f772.setContent(html_3114d9476501b42bf5a3e2d8206edc85);
+            
+        
+
+        marker_466f381fe78db28753a571c6cb2e3fb9.bindPopup(popup_13d5676dc9ea5b651d1a48bae747f772)
+        ;
+
+        
+    
+    
+            var marker_bccb4ca5ab7b0ab1646b60b58ffd023d = L.marker(
+                [10.4436597, -61.4084321],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_49da503993681b6cb51b544e7d1868c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bccb4ca5ab7b0ab1646b60b58ffd023d.setIcon(icon_49da503993681b6cb51b544e7d1868c4);
+        
+    
+        var popup_44f25d553cdc4ebd53c0263790121537 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59f01d1e6d9b0cf0dcaff55e26166b52 = $(`<div id="html_59f01d1e6d9b0cf0dcaff55e26166b52" style="width: 100.0%; height: 100.0%;">Daga Poultry depot</div>`)[0];
+                popup_44f25d553cdc4ebd53c0263790121537.setContent(html_59f01d1e6d9b0cf0dcaff55e26166b52);
+            
+        
+
+        marker_bccb4ca5ab7b0ab1646b60b58ffd023d.bindPopup(popup_44f25d553cdc4ebd53c0263790121537)
+        ;
+
+        
+    
+    
+            var marker_644baff639d475b6e0dca9453ad76588 = L.marker(
+                [10.4479625, -61.4211826],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_be671be1149b006078dbb53413b86dc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_644baff639d475b6e0dca9453ad76588.setIcon(icon_be671be1149b006078dbb53413b86dc2);
+        
+    
+        var popup_8fd01aa931ae5742479257b7e311d249 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6544c0dff597374d463e0c804f87e3c1 = $(`<div id="html_6544c0dff597374d463e0c804f87e3c1" style="width: 100.0%; height: 100.0%;">LJ & SON CHICKEN DEPOT</div>`)[0];
+                popup_8fd01aa931ae5742479257b7e311d249.setContent(html_6544c0dff597374d463e0c804f87e3c1);
+            
+        
+
+        marker_644baff639d475b6e0dca9453ad76588.bindPopup(popup_8fd01aa931ae5742479257b7e311d249)
+        ;
+
+        
+    
+    
+            var marker_174664ba0610ab84d4e915c5ece06786 = L.marker(
+                [10.4531295, -61.4200692],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_8f72d1452d5fa58c5f7b792f88b15f06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_174664ba0610ab84d4e915c5ece06786.setIcon(icon_8f72d1452d5fa58c5f7b792f88b15f06);
+        
+    
+        var popup_6589b71457de8533a315947d3ee343bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d36f617aaa66698ecbcabc487883da4 = $(`<div id="html_8d36f617aaa66698ecbcabc487883da4" style="width: 100.0%; height: 100.0%;">Riaz chicken Depot</div>`)[0];
+                popup_6589b71457de8533a315947d3ee343bb.setContent(html_8d36f617aaa66698ecbcabc487883da4);
+            
+        
+
+        marker_174664ba0610ab84d4e915c5ece06786.bindPopup(popup_6589b71457de8533a315947d3ee343bb)
+        ;
+
+        
+    
+    
+            var marker_84eb1f6224c57305d3ed585721f6bf34 = L.marker(
+                [10.4534684, -61.4195039],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_32690ff3daee4a127cf67e372366cad1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_84eb1f6224c57305d3ed585721f6bf34.setIcon(icon_32690ff3daee4a127cf67e372366cad1);
+        
+    
+        var popup_2e9aa7a91d42e05bac447fec70ee289f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6beafa6ac47790e7ee6ca89019fcf16 = $(`<div id="html_d6beafa6ac47790e7ee6ca89019fcf16" style="width: 100.0%; height: 100.0%;">Nagib's Poultry</div>`)[0];
+                popup_2e9aa7a91d42e05bac447fec70ee289f.setContent(html_d6beafa6ac47790e7ee6ca89019fcf16);
+            
+        
+
+        marker_84eb1f6224c57305d3ed585721f6bf34.bindPopup(popup_2e9aa7a91d42e05bac447fec70ee289f)
+        ;
+
+        
+    
+    
+            var marker_3c5b255d1669b61c429afd6cf31d994b = L.marker(
+                [10.4552122, -61.4071614],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_92d576ff8df3bc13bc1477bc753e8ed0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3c5b255d1669b61c429afd6cf31d994b.setIcon(icon_92d576ff8df3bc13bc1477bc753e8ed0);
+        
+    
+        var popup_e14af53686dfee1f1faa111bc0d1537c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72b57007acaf7f169bc78cfad9316d2f = $(`<div id="html_72b57007acaf7f169bc78cfad9316d2f" style="width: 100.0%; height: 100.0%;">Freeport's finest meats stop</div>`)[0];
+                popup_e14af53686dfee1f1faa111bc0d1537c.setContent(html_72b57007acaf7f169bc78cfad9316d2f);
+            
+        
+
+        marker_3c5b255d1669b61c429afd6cf31d994b.bindPopup(popup_e14af53686dfee1f1faa111bc0d1537c)
+        ;
+
+        
+    
+    
+            var marker_a3f258bfc0af4922f2d1191c3275556d = L.marker(
+                [10.4556831, -61.4071604],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_864c9db839603ef23ed93d150f0a725e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a3f258bfc0af4922f2d1191c3275556d.setIcon(icon_864c9db839603ef23ed93d150f0a725e);
+        
+    
+        var popup_0adec962a119f9f1750a2b89a03f93c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61354322d79c2a060e266ccc4a28a24e = $(`<div id="html_61354322d79c2a060e266ccc4a28a24e" style="width: 100.0%; height: 100.0%;">Lulu's Poultry Depo</div>`)[0];
+                popup_0adec962a119f9f1750a2b89a03f93c3.setContent(html_61354322d79c2a060e266ccc4a28a24e);
+            
+        
+
+        marker_a3f258bfc0af4922f2d1191c3275556d.bindPopup(popup_0adec962a119f9f1750a2b89a03f93c3)
+        ;
+
+        
+    
+    
+            var marker_cacaa70cbd75e88bf8808ef800bd0917 = L.marker(
+                [10.4661634, -61.4265746],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_e6b615b9cf5f5a2711fa1ffd2df09d42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cacaa70cbd75e88bf8808ef800bd0917.setIcon(icon_e6b615b9cf5f5a2711fa1ffd2df09d42);
+        
+    
+        var popup_ffc87a373b0e7c3b764161f1db6492dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0854706d2d8833af00f504d3c56e73d = $(`<div id="html_d0854706d2d8833af00f504d3c56e73d" style="width: 100.0%; height: 100.0%;">Richard K's Poultry Depot</div>`)[0];
+                popup_ffc87a373b0e7c3b764161f1db6492dd.setContent(html_d0854706d2d8833af00f504d3c56e73d);
+            
+        
+
+        marker_cacaa70cbd75e88bf8808ef800bd0917.bindPopup(popup_ffc87a373b0e7c3b764161f1db6492dd)
+        ;
+
+        
+    
+    
+            var marker_18b7a2f8ed382746def5c9f2116c22eb = L.marker(
+                [10.4790467, -61.4552953],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_0ac64ebd8adb3d7035e230553945fbae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_18b7a2f8ed382746def5c9f2116c22eb.setIcon(icon_0ac64ebd8adb3d7035e230553945fbae);
+        
+    
+        var popup_fb60fc8eab38cd6eb665c673187472c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ef48069f9598be5f2fb46b0e6556226 = $(`<div id="html_4ef48069f9598be5f2fb46b0e6556226" style="width: 100.0%; height: 100.0%;">Rick's Poultry Depot</div>`)[0];
+                popup_fb60fc8eab38cd6eb665c673187472c8.setContent(html_4ef48069f9598be5f2fb46b0e6556226);
+            
+        
+
+        marker_18b7a2f8ed382746def5c9f2116c22eb.bindPopup(popup_fb60fc8eab38cd6eb665c673187472c8)
+        ;
+
+        
+    
+    
+            var marker_1244f4ce2ad79588436940b2a6e264d0 = L.marker(
+                [10.3545594, -61.4309315],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_2c355c067f3fca8698ee31723dd56dcb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1244f4ce2ad79588436940b2a6e264d0.setIcon(icon_2c355c067f3fca8698ee31723dd56dcb);
+        
+    
+        var popup_a3f73b2d9929059fa402eafa942ca73a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5691b007bc407e1b78db56c5d2bd45e = $(`<div id="html_a5691b007bc407e1b78db56c5d2bd45e" style="width: 100.0%; height: 100.0%;">Zulaika's meat mart</div>`)[0];
+                popup_a3f73b2d9929059fa402eafa942ca73a.setContent(html_a5691b007bc407e1b78db56c5d2bd45e);
+            
+        
+
+        marker_1244f4ce2ad79588436940b2a6e264d0.bindPopup(popup_a3f73b2d9929059fa402eafa942ca73a)
+        ;
+
+        
+    
+    
+            var marker_160c7c3c35ccc837e304e5ecf7adab6d = L.marker(
+                [10.3457901, -61.4553409],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_6dab76803b39e11dff672abc9fa2d437 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_160c7c3c35ccc837e304e5ecf7adab6d.setIcon(icon_6dab76803b39e11dff672abc9fa2d437);
+        
+    
+        var popup_73b84f33d725e0b646086562296a286b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7001fadcb480247c14df1ce9e6024f00 = $(`<div id="html_7001fadcb480247c14df1ce9e6024f00" style="width: 100.0%; height: 100.0%;">Affordable meats and vege mart</div>`)[0];
+                popup_73b84f33d725e0b646086562296a286b.setContent(html_7001fadcb480247c14df1ce9e6024f00);
+            
+        
+
+        marker_160c7c3c35ccc837e304e5ecf7adab6d.bindPopup(popup_73b84f33d725e0b646086562296a286b)
+        ;
+
+        
+    
+    
+            var marker_5254206477e64f22f65aac2d58f32d95 = L.marker(
+                [10.3457393, -61.4598494],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_3915dded4a65a4b11232c7676f08903e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5254206477e64f22f65aac2d58f32d95.setIcon(icon_3915dded4a65a4b11232c7676f08903e);
+        
+    
+        var popup_418b0c90d1cf5acfc925e336650e943f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02e91835889bf263009ead864ca28f99 = $(`<div id="html_02e91835889bf263009ead864ca28f99" style="width: 100.0%; height: 100.0%;">Mohammed poultry Depo</div>`)[0];
+                popup_418b0c90d1cf5acfc925e336650e943f.setContent(html_02e91835889bf263009ead864ca28f99);
+            
+        
+
+        marker_5254206477e64f22f65aac2d58f32d95.bindPopup(popup_418b0c90d1cf5acfc925e336650e943f)
+        ;
+
+        
+    
+    
+            var marker_cb11768011418f18e5f41a94ff1658ca = L.marker(
+                [10.3480748, -61.4610872],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_5a94765c1296cc12c0d9ee1989a4961d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cb11768011418f18e5f41a94ff1658ca.setIcon(icon_5a94765c1296cc12c0d9ee1989a4961d);
+        
+    
+        var popup_b96bb561b46810bf072f7a84df1bc09c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2936f112a0163338af19a2cf6e199bdf = $(`<div id="html_2936f112a0163338af19a2cf6e199bdf" style="width: 100.0%; height: 100.0%;">Chicken Boss</div>`)[0];
+                popup_b96bb561b46810bf072f7a84df1bc09c.setContent(html_2936f112a0163338af19a2cf6e199bdf);
+            
+        
+
+        marker_cb11768011418f18e5f41a94ff1658ca.bindPopup(popup_b96bb561b46810bf072f7a84df1bc09c)
+        ;
+
+        
+    
+    
+            var marker_f25a7f76243c7e237c3ee9724d18af40 = L.marker(
+                [10.330406, -61.4078172],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_e33eddf705d57aa7b5a3280810baa545 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f25a7f76243c7e237c3ee9724d18af40.setIcon(icon_e33eddf705d57aa7b5a3280810baa545);
+        
+    
+        var popup_fb0d70ab4309b07cdedab2c06bbd43e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af9fdc8e16a3d757aef9c27d10ae4966 = $(`<div id="html_af9fdc8e16a3d757aef9c27d10ae4966" style="width: 100.0%; height: 100.0%;">David's poultry depot</div>`)[0];
+                popup_fb0d70ab4309b07cdedab2c06bbd43e1.setContent(html_af9fdc8e16a3d757aef9c27d10ae4966);
+            
+        
+
+        marker_f25a7f76243c7e237c3ee9724d18af40.bindPopup(popup_fb0d70ab4309b07cdedab2c06bbd43e1)
+        ;
+
+        
+    
+    
+            var marker_8cb4d37771001f85416aa572e9bea57d = L.marker(
+                [10.3360727, -61.4070658],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_ac03777a1ebf2c5930857518d8bf07fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8cb4d37771001f85416aa572e9bea57d.setIcon(icon_ac03777a1ebf2c5930857518d8bf07fe);
+        
+    
+        var popup_d6c43193052b69cea7f4aac506a2a48b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38398fbbb43acc9b40080041cd250231 = $(`<div id="html_38398fbbb43acc9b40080041cd250231" style="width: 100.0%; height: 100.0%;">T&I Poultry </div>`)[0];
+                popup_d6c43193052b69cea7f4aac506a2a48b.setContent(html_38398fbbb43acc9b40080041cd250231);
+            
+        
+
+        marker_8cb4d37771001f85416aa572e9bea57d.bindPopup(popup_d6c43193052b69cea7f4aac506a2a48b)
+        ;
+
+        
+    
+    
+            var marker_65166240de8db5daa9e341c82c091128 = L.marker(
+                [10.4876081, -61.4660131],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_58ddbbc57ceb33b673789efe9340e228 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_65166240de8db5daa9e341c82c091128.setIcon(icon_58ddbbc57ceb33b673789efe9340e228);
+        
+    
+        var popup_64131981800c050d7b7830604f989f2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_444a4054aba30d3feee0c6d91f1f581b = $(`<div id="html_444a4054aba30d3feee0c6d91f1f581b" style="width: 100.0%; height: 100.0%;">Fazila Poultry depot</div>`)[0];
+                popup_64131981800c050d7b7830604f989f2f.setContent(html_444a4054aba30d3feee0c6d91f1f581b);
+            
+        
+
+        marker_65166240de8db5daa9e341c82c091128.bindPopup(popup_64131981800c050d7b7830604f989f2f)
+        ;
+
+        
+    
+    
+            var marker_c714746e9446b320816d5e56633fcfab = L.marker(
+                [10.4790859, -61.4400584],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_468923e61959f4245343847414e61c71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c714746e9446b320816d5e56633fcfab.setIcon(icon_468923e61959f4245343847414e61c71);
+        
+    
+        var popup_b09052371f6a04d2590d1f80285eaaac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec5c6aaaedc169a60928199d2cea70a6 = $(`<div id="html_ec5c6aaaedc169a60928199d2cea70a6" style="width: 100.0%; height: 100.0%;">Ravi's Poultry Depot</div>`)[0];
+                popup_b09052371f6a04d2590d1f80285eaaac.setContent(html_ec5c6aaaedc169a60928199d2cea70a6);
+            
+        
+
+        marker_c714746e9446b320816d5e56633fcfab.bindPopup(popup_b09052371f6a04d2590d1f80285eaaac)
+        ;
+
+        
+    
+    
+            var marker_b98ab932e59b17d5e62a774174606e3f = L.marker(
+                [10.3227672, -61.4125915],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_e61a093ffa7dbb582159ae13918e6420 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b98ab932e59b17d5e62a774174606e3f.setIcon(icon_e61a093ffa7dbb582159ae13918e6420);
+        
+    
+        var popup_a0faef90b6a0f5f07b6786dd8e9658bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26b533e2cf4c6715fffd651305bb037e = $(`<div id="html_26b533e2cf4c6715fffd651305bb037e" style="width: 100.0%; height: 100.0%;">Alim’s Poultry Depot</div>`)[0];
+                popup_a0faef90b6a0f5f07b6786dd8e9658bb.setContent(html_26b533e2cf4c6715fffd651305bb037e);
+            
+        
+
+        marker_b98ab932e59b17d5e62a774174606e3f.bindPopup(popup_a0faef90b6a0f5f07b6786dd8e9658bb)
+        ;
+
+        
+    
+    
+            var marker_d0011faec74a9d5243f22143f3b12581 = L.marker(
+                [10.3153046, -61.4281822],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_9c80f348ce01484551d9ff47e5207a39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d0011faec74a9d5243f22143f3b12581.setIcon(icon_9c80f348ce01484551d9ff47e5207a39);
+        
+    
+        var popup_505b39445af589d9815b9caa8410ba96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f4ff4bd77689ec19a7a036ff8f3c24a = $(`<div id="html_1f4ff4bd77689ec19a7a036ff8f3c24a" style="width: 100.0%; height: 100.0%;">C.P.L Chicken Depot</div>`)[0];
+                popup_505b39445af589d9815b9caa8410ba96.setContent(html_1f4ff4bd77689ec19a7a036ff8f3c24a);
+            
+        
+
+        marker_d0011faec74a9d5243f22143f3b12581.bindPopup(popup_505b39445af589d9815b9caa8410ba96)
+        ;
+
+        
+    
+    
+            var marker_c984223fbf93a698e7d5c39768b0a982 = L.marker(
+                [10.3348543, -61.2417472],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_6883685180cbae62522c7f2ac287f144 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c984223fbf93a698e7d5c39768b0a982.setIcon(icon_6883685180cbae62522c7f2ac287f144);
+        
+    
+        var popup_72e5dd058cff24e5a2209e5e52ce9edd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09eac5914df4b7b55b5021b1eebbf8aa = $(`<div id="html_09eac5914df4b7b55b5021b1eebbf8aa" style="width: 100.0%; height: 100.0%;">Roger Sampson</div>`)[0];
+                popup_72e5dd058cff24e5a2209e5e52ce9edd.setContent(html_09eac5914df4b7b55b5021b1eebbf8aa);
+            
+        
+
+        marker_c984223fbf93a698e7d5c39768b0a982.bindPopup(popup_72e5dd058cff24e5a2209e5e52ce9edd)
+        ;
+
+        
+    
+    
+            var marker_15c26f5017f62f16e7a0593cb676b3c5 = L.marker(
+                [10.4565749, -61.3252913],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_0f52279a65312da5cffa8372eff0a606 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_15c26f5017f62f16e7a0593cb676b3c5.setIcon(icon_0f52279a65312da5cffa8372eff0a606);
+        
+    
+        var popup_e8ba8bbfb3f24170b5777dc3135a328d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_106b62f6e3c9597c737bbe5d6098cffb = $(`<div id="html_106b62f6e3c9597c737bbe5d6098cffb" style="width: 100.0%; height: 100.0%;">Carl & Golly Poultry Depot</div>`)[0];
+                popup_e8ba8bbfb3f24170b5777dc3135a328d.setContent(html_106b62f6e3c9597c737bbe5d6098cffb);
+            
+        
+
+        marker_15c26f5017f62f16e7a0593cb676b3c5.bindPopup(popup_e8ba8bbfb3f24170b5777dc3135a328d)
+        ;
+
+        
+    
+    
+            var marker_4c3abf551805406715d3a183432c92fa = L.marker(
+                [10.4597299, -61.3268711],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_0a025c65bce3989bc828dd71feade708 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4c3abf551805406715d3a183432c92fa.setIcon(icon_0a025c65bce3989bc828dd71feade708);
+        
+    
+        var popup_c9f2dc7908c5fcbf0eb10fd62044a1db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfbb38f18fc9a31c3b7c00dbd4b47d7d = $(`<div id="html_cfbb38f18fc9a31c3b7c00dbd4b47d7d" style="width: 100.0%; height: 100.0%;">Ramlal's poultry depot & feed shop</div>`)[0];
+                popup_c9f2dc7908c5fcbf0eb10fd62044a1db.setContent(html_cfbb38f18fc9a31c3b7c00dbd4b47d7d);
+            
+        
+
+        marker_4c3abf551805406715d3a183432c92fa.bindPopup(popup_c9f2dc7908c5fcbf0eb10fd62044a1db)
+        ;
+
+        
+    
+    
+            var marker_a45e2a556ee346150f7307699b597c43 = L.marker(
+                [10.4948903, -61.3667053],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_452c07f8dd90a72c5a4391bd92c9122e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a45e2a556ee346150f7307699b597c43.setIcon(icon_452c07f8dd90a72c5a4391bd92c9122e);
+        
+    
+        var popup_c83521519dc53c5b859afb39fdee3df4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a53017d7af8c482267d9f331dd3e36e5 = $(`<div id="html_a53017d7af8c482267d9f331dd3e36e5" style="width: 100.0%; height: 100.0%;">Ricky's Poultry Depot</div>`)[0];
+                popup_c83521519dc53c5b859afb39fdee3df4.setContent(html_a53017d7af8c482267d9f331dd3e36e5);
+            
+        
+
+        marker_a45e2a556ee346150f7307699b597c43.bindPopup(popup_c83521519dc53c5b859afb39fdee3df4)
+        ;
+
+        
+    
+    
+            var marker_26a6890c95c7ecc6f7349368d348c3aa = L.marker(
+                [10.4915286, -61.3966703],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_b1226a4461d0fceb0a1e6715bcb53e38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_26a6890c95c7ecc6f7349368d348c3aa.setIcon(icon_b1226a4461d0fceb0a1e6715bcb53e38);
+        
+    
+        var popup_1baca89afa6eaf09453f293962a91a85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1068b398546d164838c7db17d9caaaac = $(`<div id="html_1068b398546d164838c7db17d9caaaac" style="width: 100.0%; height: 100.0%;">Sharrifah's Chicken Depot</div>`)[0];
+                popup_1baca89afa6eaf09453f293962a91a85.setContent(html_1068b398546d164838c7db17d9caaaac);
+            
+        
+
+        marker_26a6890c95c7ecc6f7349368d348c3aa.bindPopup(popup_1baca89afa6eaf09453f293962a91a85)
+        ;
+
+        
+    
+    
+            var marker_0e8e2af18b49f349197fb2a339fbee6c = L.marker(
+                [10.4004585, -61.4178721],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_2013727711ac1a548bc20e3a245b84d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0e8e2af18b49f349197fb2a339fbee6c.setIcon(icon_2013727711ac1a548bc20e3a245b84d0);
+        
+    
+        var popup_ebc87b99b24b45e1b8a6abc2538e9c8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c0236173720460a75e9e7c1d13619ab = $(`<div id="html_1c0236173720460a75e9e7c1d13619ab" style="width: 100.0%; height: 100.0%;">D trail poultry depot and supplies</div>`)[0];
+                popup_ebc87b99b24b45e1b8a6abc2538e9c8e.setContent(html_1c0236173720460a75e9e7c1d13619ab);
+            
+        
+
+        marker_0e8e2af18b49f349197fb2a339fbee6c.bindPopup(popup_ebc87b99b24b45e1b8a6abc2538e9c8e)
+        ;
+
+        
+    
+    
+            var marker_4bc949b8684a9a65a42dd66549ac87fa = L.marker(
+                [10.4199343, -61.4330048],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_73800771de244b4a4d17631bdd9f9eb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4bc949b8684a9a65a42dd66549ac87fa.setIcon(icon_73800771de244b4a4d17631bdd9f9eb3);
+        
+    
+        var popup_7ded75f32718070858dd0a8ae107aacf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9a2923d944a9bf8f443690260d3dab4 = $(`<div id="html_b9a2923d944a9bf8f443690260d3dab4" style="width: 100.0%; height: 100.0%;">Strictly Depot</div>`)[0];
+                popup_7ded75f32718070858dd0a8ae107aacf.setContent(html_b9a2923d944a9bf8f443690260d3dab4);
+            
+        
+
+        marker_4bc949b8684a9a65a42dd66549ac87fa.bindPopup(popup_7ded75f32718070858dd0a8ae107aacf)
+        ;
+
+        
+    
+    
+            var marker_4358edc3a51c70bfdbdd852947c80252 = L.marker(
+                [10.4207715, -61.4279163],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_ad8465c4994217597644b8081c6e182b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4358edc3a51c70bfdbdd852947c80252.setIcon(icon_ad8465c4994217597644b8081c6e182b);
+        
+    
+        var popup_30b56d66172a37a6d03cbe67f2c6b7ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acea2b98a550110e5a6cb33aaf4887b9 = $(`<div id="html_acea2b98a550110e5a6cb33aaf4887b9" style="width: 100.0%; height: 100.0%;">VMR Pluck Shop</div>`)[0];
+                popup_30b56d66172a37a6d03cbe67f2c6b7ae.setContent(html_acea2b98a550110e5a6cb33aaf4887b9);
+            
+        
+
+        marker_4358edc3a51c70bfdbdd852947c80252.bindPopup(popup_30b56d66172a37a6d03cbe67f2c6b7ae)
+        ;
+
+        
+    
+    
+            var marker_288da6afaa43677a86f5c2ca952c849f = L.marker(
+                [10.4259676, -61.4041446],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_d0a629bfe7e487fdb054eaab7e730162 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_288da6afaa43677a86f5c2ca952c849f.setIcon(icon_d0a629bfe7e487fdb054eaab7e730162);
+        
+    
+        var popup_13e0f9bd72d81890f69f0a5eb734a252 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_795df48eafb308083757356ac95ec572 = $(`<div id="html_795df48eafb308083757356ac95ec572" style="width: 100.0%; height: 100.0%;">Seasame street poultry depot</div>`)[0];
+                popup_13e0f9bd72d81890f69f0a5eb734a252.setContent(html_795df48eafb308083757356ac95ec572);
+            
+        
+
+        marker_288da6afaa43677a86f5c2ca952c849f.bindPopup(popup_13e0f9bd72d81890f69f0a5eb734a252)
+        ;
+
+        
+    
+    
+            var marker_6def528a540539bb9736cc9a5db48dcb = L.marker(
+                [10.4582855, -61.4291565],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_c459301e8779150de57c9018962f2a27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6def528a540539bb9736cc9a5db48dcb.setIcon(icon_c459301e8779150de57c9018962f2a27);
+        
+    
+        var popup_1d8dff74e8692ad6e66fd5d938cbfb0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41e021c6699816473dfdb3b75bf06472 = $(`<div id="html_41e021c6699816473dfdb3b75bf06472" style="width: 100.0%; height: 100.0%;">Glasses poultry depot -</div>`)[0];
+                popup_1d8dff74e8692ad6e66fd5d938cbfb0d.setContent(html_41e021c6699816473dfdb3b75bf06472);
+            
+        
+
+        marker_6def528a540539bb9736cc9a5db48dcb.bindPopup(popup_1d8dff74e8692ad6e66fd5d938cbfb0d)
+        ;
+
+        
+    
+    
+            var marker_0d37466eaddf8a29e9c58c78e0119e7e = L.marker(
+                [10.4745194, -61.4124685],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_ba9abff63773eca8080d0064bc8c591b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0d37466eaddf8a29e9c58c78e0119e7e.setIcon(icon_ba9abff63773eca8080d0064bc8c591b);
+        
+    
+        var popup_1160e90eb0a108b79f711444e2b56e7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f890be9f4aee0bcbf580d6c8a70341e = $(`<div id="html_5f890be9f4aee0bcbf580d6c8a70341e" style="width: 100.0%; height: 100.0%;">Ramoo Chicken Depot</div>`)[0];
+                popup_1160e90eb0a108b79f711444e2b56e7d.setContent(html_5f890be9f4aee0bcbf580d6c8a70341e);
+            
+        
+
+        marker_0d37466eaddf8a29e9c58c78e0119e7e.bindPopup(popup_1160e90eb0a108b79f711444e2b56e7d)
+        ;
+
+        
+    
+    
+            var marker_ae136142eb0f495eb282d3f6b47ab073 = L.marker(
+                [10.4778789, -61.410483],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_c1663d086264c4d2136076252499ec0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ae136142eb0f495eb282d3f6b47ab073.setIcon(icon_c1663d086264c4d2136076252499ec0d);
+        
+    
+        var popup_68c94f00840cb745663bdfaf71b4a958 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_473164457b6fc224a7d388c5f965760c = $(`<div id="html_473164457b6fc224a7d388c5f965760c" style="width: 100.0%; height: 100.0%;">Ameer's Poultry Depo</div>`)[0];
+                popup_68c94f00840cb745663bdfaf71b4a958.setContent(html_473164457b6fc224a7d388c5f965760c);
+            
+        
+
+        marker_ae136142eb0f495eb282d3f6b47ab073.bindPopup(popup_68c94f00840cb745663bdfaf71b4a958)
+        ;
+
+        
+    
+    
+            var marker_b89fb7ca0f707ac917992f37c850cafe = L.marker(
+                [10.4814016, -61.4081632],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_6f1e9b94c8467524d6b8ee43f7e3206f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b89fb7ca0f707ac917992f37c850cafe.setIcon(icon_6f1e9b94c8467524d6b8ee43f7e3206f);
+        
+    
+        var popup_77e0cb8e26e8272c90efcbdb5bd0da9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d404c647716a506653ef06e678a01d2d = $(`<div id="html_d404c647716a506653ef06e678a01d2d" style="width: 100.0%; height: 100.0%;">Rasta and sons</div>`)[0];
+                popup_77e0cb8e26e8272c90efcbdb5bd0da9d.setContent(html_d404c647716a506653ef06e678a01d2d);
+            
+        
+
+        marker_b89fb7ca0f707ac917992f37c850cafe.bindPopup(popup_77e0cb8e26e8272c90efcbdb5bd0da9d)
+        ;
+
+        
+    
+    
+            var marker_5c2495179349468b1dc8880c5b29a55a = L.marker(
+                [10.482332, -61.4081374],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_b874f783607eab2b529e39cc89aff820 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5c2495179349468b1dc8880c5b29a55a.setIcon(icon_b874f783607eab2b529e39cc89aff820);
+        
+    
+        var popup_aed155085c6e38878aaceb31ca9cdf2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_915b7813b633ad9a6ccacb7008bc098a = $(`<div id="html_915b7813b633ad9a6ccacb7008bc098a" style="width: 100.0%; height: 100.0%;">Roodal's Poultry Depot</div>`)[0];
+                popup_aed155085c6e38878aaceb31ca9cdf2e.setContent(html_915b7813b633ad9a6ccacb7008bc098a);
+            
+        
+
+        marker_5c2495179349468b1dc8880c5b29a55a.bindPopup(popup_aed155085c6e38878aaceb31ca9cdf2e)
+        ;
+
+        
+    
+    
+            var marker_21dcd9f86b12cc432c5709beb4736461 = L.marker(
+                [10.4842988, -61.4081199],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_cf41f4d0a83b8cb10c0e6a1d5882ce50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_21dcd9f86b12cc432c5709beb4736461.setIcon(icon_cf41f4d0a83b8cb10c0e6a1d5882ce50);
+        
+    
+        var popup_28333f01f542cdace264146ce9a2d6ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_177714297df165183ebc9cd22bad34cd = $(`<div id="html_177714297df165183ebc9cd22bad34cd" style="width: 100.0%; height: 100.0%;">Mr. M meats</div>`)[0];
+                popup_28333f01f542cdace264146ce9a2d6ab.setContent(html_177714297df165183ebc9cd22bad34cd);
+            
+        
+
+        marker_21dcd9f86b12cc432c5709beb4736461.bindPopup(popup_28333f01f542cdace264146ce9a2d6ab)
+        ;
+
+        
+    
+    
+            var marker_8548c5a5cca960aba5e09deb7c42cb50 = L.marker(
+                [10.4855434, -61.4100766],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_cc3ef1cfa4fd2bfdb59cedc2ab0a9997 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8548c5a5cca960aba5e09deb7c42cb50.setIcon(icon_cc3ef1cfa4fd2bfdb59cedc2ab0a9997);
+        
+    
+        var popup_dc5803e4389131e6b7a91dfd568ce0da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8268f29a34c16f18b6bc07f2d1543f04 = $(`<div id="html_8268f29a34c16f18b6bc07f2d1543f04" style="width: 100.0%; height: 100.0%;">Shortman meat and poultry Depot</div>`)[0];
+                popup_dc5803e4389131e6b7a91dfd568ce0da.setContent(html_8268f29a34c16f18b6bc07f2d1543f04);
+            
+        
+
+        marker_8548c5a5cca960aba5e09deb7c42cb50.bindPopup(popup_dc5803e4389131e6b7a91dfd568ce0da)
+        ;
+
+        
+    
+    
+            var marker_bf59919dbd2b963a91823b2182995706 = L.marker(
+                [10.4396192, -61.4479062],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_b0598ab1bcb2293aa28d64b6bc3046ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bf59919dbd2b963a91823b2182995706.setIcon(icon_b0598ab1bcb2293aa28d64b6bc3046ef);
+        
+    
+        var popup_0c0daa0ef963e4c95ff9f9b26413d177 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f76e83004bdfe229ed2b6fe5851f13bd = $(`<div id="html_f76e83004bdfe229ed2b6fe5851f13bd" style="width: 100.0%; height: 100.0%;">Aleem's Poultry Depot </div>`)[0];
+                popup_0c0daa0ef963e4c95ff9f9b26413d177.setContent(html_f76e83004bdfe229ed2b6fe5851f13bd);
+            
+        
+
+        marker_bf59919dbd2b963a91823b2182995706.bindPopup(popup_0c0daa0ef963e4c95ff9f9b26413d177)
+        ;
+
+        
+    
+    
+            var marker_a0ff0627af0a07ae72dccd2fdaae178f = L.marker(
+                [10.5493284, -61.2706775],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_8697f6275d0746176adf2c154ca52ead = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a0ff0627af0a07ae72dccd2fdaae178f.setIcon(icon_8697f6275d0746176adf2c154ca52ead);
+        
+    
+        var popup_5a706cdf38775428f16995e670d5e870 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3be15ad72ff0171d5bdaebf46fca2650 = $(`<div id="html_3be15ad72ff0171d5bdaebf46fca2650" style="width: 100.0%; height: 100.0%;">VB PREMIUM FOODS</div>`)[0];
+                popup_5a706cdf38775428f16995e670d5e870.setContent(html_3be15ad72ff0171d5bdaebf46fca2650);
+            
+        
+
+        marker_a0ff0627af0a07ae72dccd2fdaae178f.bindPopup(popup_5a706cdf38775428f16995e670d5e870)
+        ;
+
+        
+    
+    
+            var marker_99d0bf41b7d93d7cf74381198b3a6e79 = L.marker(
+                [10.5580527, -61.2720589],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_11f7f61b34f9cd5ef992bf98c77e6ce4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_99d0bf41b7d93d7cf74381198b3a6e79.setIcon(icon_11f7f61b34f9cd5ef992bf98c77e6ce4);
+        
+    
+        var popup_43a15bdba3016343b93ce75e0eb87a15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba1efdb5176c564994da57c394fc766b = $(`<div id="html_ba1efdb5176c564994da57c394fc766b" style="width: 100.0%; height: 100.0%;">Brazil Chicken Depot</div>`)[0];
+                popup_43a15bdba3016343b93ce75e0eb87a15.setContent(html_ba1efdb5176c564994da57c394fc766b);
+            
+        
+
+        marker_99d0bf41b7d93d7cf74381198b3a6e79.bindPopup(popup_43a15bdba3016343b93ce75e0eb87a15)
+        ;
+
+        
+    
+    
+            var marker_65f75a4bd13da32101f9044f975a98bb = L.marker(
+                [10.5681936, -61.2863772],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_e9e523e34bfc438ea9abe77f92e1be78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_65f75a4bd13da32101f9044f975a98bb.setIcon(icon_e9e523e34bfc438ea9abe77f92e1be78);
+        
+    
+        var popup_e0f9e44a9d71ac0003c0d72c8c8c6c80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8963336d30e7f7bb9351e5e26d509b52 = $(`<div id="html_8963336d30e7f7bb9351e5e26d509b52" style="width: 100.0%; height: 100.0%;">C & C Poultry</div>`)[0];
+                popup_e0f9e44a9d71ac0003c0d72c8c8c6c80.setContent(html_8963336d30e7f7bb9351e5e26d509b52);
+            
+        
+
+        marker_65f75a4bd13da32101f9044f975a98bb.bindPopup(popup_e0f9e44a9d71ac0003c0d72c8c8c6c80)
+        ;
+
+        
+    
+    
+            var marker_461b2ddc8d73d9477538716fdd50f2c3 = L.marker(
+                [10.5650309, -61.3211138],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_097602063e14c1a072a21c7031716daf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_461b2ddc8d73d9477538716fdd50f2c3.setIcon(icon_097602063e14c1a072a21c7031716daf);
+        
+    
+        var popup_d07c1e9c41d4d2cdce7c1cc664c8f79c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13e49f7f847eafcebb07d2bd6b6cabe1 = $(`<div id="html_13e49f7f847eafcebb07d2bd6b6cabe1" style="width: 100.0%; height: 100.0%;">R&N Poultry Depot </div>`)[0];
+                popup_d07c1e9c41d4d2cdce7c1cc664c8f79c.setContent(html_13e49f7f847eafcebb07d2bd6b6cabe1);
+            
+        
+
+        marker_461b2ddc8d73d9477538716fdd50f2c3.bindPopup(popup_d07c1e9c41d4d2cdce7c1cc664c8f79c)
+        ;
+
+        
+    
+    
+            var marker_7058dcf490534dd207dc51b9af41b842 = L.marker(
+                [10.5650309, -61.3211138],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_aea9ec4b477090be31394da97185c4b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7058dcf490534dd207dc51b9af41b842.setIcon(icon_aea9ec4b477090be31394da97185c4b6);
+        
+    
+        var popup_8b882c28212d9e44295e97c9eaca6acd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e590fa7a3e10b130050e9cda01ac5a5b = $(`<div id="html_e590fa7a3e10b130050e9cda01ac5a5b" style="width: 100.0%; height: 100.0%;">Sunil's Poultry Depot</div>`)[0];
+                popup_8b882c28212d9e44295e97c9eaca6acd.setContent(html_e590fa7a3e10b130050e9cda01ac5a5b);
+            
+        
+
+        marker_7058dcf490534dd207dc51b9af41b842.bindPopup(popup_8b882c28212d9e44295e97c9eaca6acd)
+        ;
+
+        
+    
+    
+            var marker_6c06595bb3bce846c894d02e1d0f8fdc = L.marker(
+                [10.579848, -61.3272393],
+                {}
+            ).addTo(map_0ede00f736614d7f55f4c19f0d6ef990);
+        
+    
+            var icon_a61e943ed9c36850999a147a57b34933 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6c06595bb3bce846c894d02e1d0f8fdc.setIcon(icon_a61e943ed9c36850999a147a57b34933);
+        
+    
+        var popup_3289f62d5428889497ad365bd22dab02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0228319a0309a9fe182089bd755328b9 = $(`<div id="html_0228319a0309a9fe182089bd755328b9" style="width: 100.0%; height: 100.0%;">Meat Lovers</div>`)[0];
+                popup_3289f62d5428889497ad365bd22dab02.setContent(html_0228319a0309a9fe182089bd755328b9);
+            
+        
+
+        marker_6c06595bb3bce846c894d02e1d0f8fdc.bindPopup(popup_3289f62d5428889497ad365bd22dab02)
+        ;
+
+        
+    
+</script>
+</html>
